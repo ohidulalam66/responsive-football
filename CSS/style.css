@@ -22,8 +22,10 @@ header {
     width: 100%;
     height: 677px;
     background: #2D25A0;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .left-header {
     margin: 207px 0px 0px 100px;
@@ -100,8 +102,8 @@ main styles
 
 
 .blogs {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 } 
 .left-blog{
     margin-left: 80px;
@@ -196,3 +198,66 @@ footer {
     font-size: 18px;
     margin:20px 0px 60px 0px;
 }
+
+
+
+/*------------ 
+media query
+-------------- */
+
+
+/* Mobile devices */
+
+
+@media only screen and (max-width: 688px){
+    header {
+        width: 688px;
+        height: 800px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .left-header {
+        margin: 10px 0px 0px 10px;
+    }
+    header .left-header h1{
+        font-weight: 700;
+        font-size: 60px;
+    }
+    .right-header img {
+        width: 500px;
+        height: 440px;
+        margin: 15px;
+    }
+    .player {
+        width: 330px;
+        height: 474px;
+        
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 70px 0px 0px 0px;
+    }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .left-blog {
+        margin-top: 50px;
+    }
+        
+    .right-blog {
+        width: 605px;
+        height: 335px;
+        margin-left: 75px;
+        margin-top: 50px;
+    }
+    .logo img {
+        width: 485px;
+        height: 110px;
+        margin: 350px 0px 20px 0px;
+    }
+}  
+
+
+
+/* -------------
+end styles 
+----------------*/
