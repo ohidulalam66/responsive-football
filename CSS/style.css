@@ -1,25 +1,32 @@
 /* --------------
 body styles 
 -----------------*/
+
+
+
 body {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
     font-family: 'Poppins', sans-serif;
 }
+
+
+
 /*---------------
  header styles
 ----------------- */
+
+
+
 header {
-    width: 1440px;
-    /* width: 100%; */
+    width: 100%;
     height: 677px;
     background: #2D25A0;
     display: flex;
     justify-content: space-between;
 }
 .left-header {
-    margin: 207px 0px 0px 156px;
+    margin: 207px 0px 0px 100px;
 }
 header .left-header h1{
     font-weight: 700;
@@ -34,7 +41,7 @@ header .left-header h1{
 }
 .link-button:hover {
     transform: scaleY(1.5);
-    transition: transform 3s ease-in;
+    transition: transform 2s ease-in;
 ;
 }
 .right-header img {
@@ -42,18 +49,27 @@ header .left-header h1{
     height: 438px;
     margin: 153px 140px 0px 0px;
 }
+
+
+
 /*---------- 
 main styles 
 -------------*/
 
+
+
+
 /* section players */
+
+
+
 .players {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 30px;
     justify-items: center;
     align-content: center;
-    margin: 70px 210px 165px 180px;
+    margin: 70px 0px 165px 0px;
 }
 .player {
     width: 330px;
@@ -76,16 +92,19 @@ main styles
     color: #6C6C6C;
     font-size: 16px;
 }
+
+
+
 /* section blogs */
+
+
+
 .blogs {
     display: flex;
     justify-content: space-around;
 } 
 .left-blog{
-    margin-left: 182px;
-}
-.right-blog{
-    margin-right: 30px;
+    margin-left: 80px;
 }
 .left-blog .blog-image img {
     width: 520px;
@@ -121,4 +140,59 @@ main styles
     color: #FFFFFF;
     background: #E02C6D;
     padding: 10px 24px 10px 24px;
+}
+
+
+
+/*---------------
+footer styles
+----------------- */
+
+
+
+footer {
+    text-align: center;
+}
+
+
+
+/* logo styles */
+
+
+
+.logo img {
+    width: 485px;
+    height: 110px;
+    margin: 158px 0px 20px 0px;
+}
+
+
+
+/* icon styles */
+
+
+
+.icon .fab {
+    font-size: 25px;
+    margin: 7px;
+    padding: 10px;
+    color: gray;
+    background: #969bab83;
+    border: none;
+    border-radius: 50%;
+}
+.fab:hover {
+    color: black;
+    transition: 1s linear;
+}
+
+
+
+/* copyright styles */
+
+
+
+.copyright {
+    font-size: 18px;
+    margin:20px 0px 60px 0px;
 }
